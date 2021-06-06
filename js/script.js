@@ -1,21 +1,22 @@
 //date and time
 const dateContainer = document.querySelector("#hours");
 
-function museumHours(){
+function museumHours() {
     const today = new Date();
     let weekDay = today.getDay();
     console.log(weekDay);
-  
-    if (weekDay === 1){
+
+    if (weekDay === 0) {
+
         dateContainer.innerHTML = `Today's Hours: Closed`;
     }
-    if (weekDay === 0){
+    else if (weekDay === 6) {
         dateContainer.innerHTML = `Today's Hours: 10:00 - 15:00`;
     }
-    if (weekDay === 5){
+    else if (weekDay === 5) {
         dateContainer.innerHTML = `Today's Hours: 9:00 - 18:00`;
     }
-    else{ dateContainer.innerHTML = `Today's Hours: 9:00 - 16:00`};
+    else { dateContainer.innerHTML = `Today's Hours: 9:00 - 16:00` }
 }
 museumHours()
 
@@ -28,14 +29,14 @@ const nav = document.querySelector("nav");
 hamburgerMenu.addEventListener("click", showMenu);
 closeButton.addEventListener("click", closeMenu);
 
-function showMenu(){
+function showMenu() {
     nav.style.display = "block";
     hamburgerMenu.style.display = "none";
     closeButton.style.display = "block";
 };
 
-function closeMenu(){
-    nav.style.display= "none";
+function closeMenu() {
+    nav.style.display = "none";
     closeButton.style.display = "none";
     hamburgerMenu.style.display = "block";
 
@@ -48,16 +49,25 @@ let submenuTwo = document.querySelector("#subMenuTwo");
 let submenuOneContent = document.querySelector("#menuOneContent");
 let submenuTwoContent = document.querySelector("#menuTwoContent");
 
-submenuOne.addEventListener("mouseover", function(){
+submenuOne.addEventListener("mouseover", function () {
     submenuOneContent.style.display = "flex";
 });
-submenuOne.addEventListener("mouseleave", function(){
+submenuOne.addEventListener("mouseleave", function () {
     submenuOneContent.style.display = "none";
 });
-submenuTwo.addEventListener("mouseover", function(){
+submenuTwo.addEventListener("mouseover", function () {
     submenuTwoContent.style.display = "flex";
 });
-submenuTwo.addEventListener("mouseleave", function(){
+submenuTwo.addEventListener("mouseleave", function () {
     submenuTwoContent.style.display = "none";
 });
 
+//Validate email 
+
+function validateEmail(email) {
+    const regEx = /\S+@\S+\.\S+/;
+    const patternMatch = regEx.test(email);
+    return patternMatch;
+};
+
+//Validate Subscribe

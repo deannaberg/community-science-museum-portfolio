@@ -1,106 +1,117 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Contact</title>
-        <meta name="description" content="Use our form to contact us about tours, educational, internship, and research opportunities or questions"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!--Style Sheets-->
-        <link href="styles/styles.css" rel="stylesheet">
-        <link href="styles/contact.css" rel="stylesheet">
-        
-        <!--Fonts-->
-        <link rel="stylesheet" href="https://use.typekit.net/eyg7zrp.css"></script>
 
-        <!--Font Awesome Script-->
-        <script src="https://kit.fontawesome.com/a8fae1eb2c.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header> 
-            <div id="header-top">
-                <div id="hours" class="timeDate"></div>
-            </div>
-            <div id="header-main">
-                <a href="index.html"><img id="logo" src="images/csm_logo.svg" alt="Community Science Museum Logo"/></a>
-                <!--Hamburger Menu-->
-                <button id="hamMenu" aria-label="open menu"><i class="fas fa-bars"></i></button>
-                <button id="closeMenu" aria-label="close menu"><i class="fas fa-times"></i></button>
-        
-                <!--Navigation-->  
-                <nav>
-                     <ul>
-                        <li><a class="" href="visit.html">Visit Us</a></li>
-                        <li id="subMenuOne" class="dropdown">Explore <i class="drop-arrow fas fa-angle-down"></i>
-                            <ul id="menuOneContent" class="subContent">
-                                <li><a class="" href="explore/youth.html">Youth</a></li>
-                                <li><a class="" href="explore/family.html">Families</a></li>
-                                <li><a class="" href="explore/educators.html">Educators</a></li>
-                                <li><a class="" href="explore/researchers.html">Researchers</a></li>
-                            </ul>
-                        </li>
-                        <li id="subMenuTwo"class="dropdown">Exhibits & Events <i class="drop-arrow fas fa-angle-down"></i>
-                            <ul id="menuTwoContent"class="subContent">
-                                <li><a class="" href="exhibits/special-exhibit.html">Special</a></li>
-                                <li><a class="" href="exhibits/ongoing-exhibits.html">Ongoing</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="" href="get-involved.html">Get Involved</a></li>
-                        <li><a class="" href="about.html">About Us</a></li>
-                        <li><a class="" href="contact.html">Contact</a></li>
-                    </ul>
-                </nav> 
-            </div>
-            </header>
-            <main>
-                <div class="mainContentWrap">
-                <h1>Contact</h1>
-                    <form class="contactForm" action="" method="get">
-                        <label class="contactLabel">Your Name <span id="nameError" class="required">Name required</span><br/>
-                        <input id="nameInput" class="contactInput" type="text" name="Name"/></label><br/>
-                        <label class="contactLabel">Email <span id="emailError" class="required">email required</span><br/>
-                        <input id="emailInput" class="contactInput" type="email" name="email"/></label><br/>
-                        <label class="contactLabel">Reason for contact <span id="reasonError" class="required">Reason for contact required</span><br />
-                        <select id="reasonInput" class="contactSelect" name="reason">
-                            <option value="Please Choose Reason" disabled="disabled" selected="selected">Please Choose Reason</option>
-                            <option value="Group Tour">Group Tour</option>
-                            <option value="Research">Research</option>
-                            <option value="Intern">Intern</option>
-                            <option value="Education">Education</option>
-                            <option value="Volunteer">Volunteer</option>
-                            <option value="Donate">Donate</option>
-                            <option value="Other">Other</option>
-                        </select></label><br/>
-                        <label class="contactLabel">Message <span id="messageError" class="required">Message required</span><br/>
-                        <textarea id="messageInput" class="contactInput messageInput" name="message"></textarea>
-                        </label>
-                        <input id="submit" class="contactSubmitButton" type="submit" name="submit" value="send" />
-                    </form>
-                </div>
-            </main>
-            <footer>
-                <div class="footer-subscribe">
-                    <form class="footer-form">
-                        <p>Subscribe to our newsletter!</p>
-                        <input class="form-in" type="email" value="your email address" />
-                        <input class="subscribeButton" type="submit" value="submit">
-                    </form>
-                </div>
-                <a id="footer-logo" href="index.html"><img id="footer-logo-img" src="images/csm_logo_wide.svg" alt="community science museum logo"/></a>
-                <div class="icon-wrap">
-                    <address>
-                        <p>Tlf: 000 00 000 Email: info@csm.com</p>
-                        <p>Havnegata 170, Vadsø 9800</p>
-                    </address>
-                </div>
-                    <a class="icons" href="#"><i class="fab fa-facebook"></i></a>
-                    <a class="icons" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="icons" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="icons" href="#"><i class="fab fa-tiktok"></i></a>
-                <div class="footer-black">
-                    <p>&copy Community Science Museum 2020. All rights reserved.</p>
-                </div>
-            </footer>
-            <script src="js/script.js"></script>
-            <script src="js/contact.js"></script>
-    </body>
-    </html>
+<head>
+    <title>Contact</title>
+    <meta name="description"
+        content="Use our form to contact us about tours, educational, internship, and research opportunities or questions">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Style Sheets-->
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/contact.css" rel="stylesheet">
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/eyg7zrp.css">
+    </script>
+
+    <!--Font Awesome Script-->
+    <script src="https://kit.fontawesome.com/a8fae1eb2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header-top">
+            <div id="hours" class="timeDate"></div>
+        </div>
+        <div id="header-main">
+            <a href="index.html"><img id="logo" src="images/csm_logo.svg" alt="Community Science Museum Logo" /></a>
+            <!--Hamburger Menu-->
+            <button id="hamMenu" aria-label="open menu"><i class="fas fa-bars"></i></button>
+            <button id="closeMenu" aria-label="close menu"><i class="fas fa-times"></i></button>
+
+            <!--Navigation-->
+            <nav>
+                <ul>
+                    <li><a class="" href="visit.html">Visit Us</a></li>
+                    <li id="subMenuOne" class="dropdown">Explore <i class="drop-arrow fas fa-angle-down"></i>
+                        <ul id="menuOneContent" class="subContent">
+                            <li><a class="" href="explore/youth.html">Youth</a></li>
+                            <li><a class="" href="explore/family.html">Families</a></li>
+                            <li><a class="" href="explore/educators.html">Educators</a></li>
+                            <li><a class="" href="explore/researchers.html">Researchers</a></li>
+                        </ul>
+                    </li>
+                    <li id="subMenuTwo" class="dropdown">Exhibits & Events <i class="drop-arrow fas fa-angle-down"></i>
+                        <ul id="menuTwoContent" class="subContent">
+                            <li><a class="" href="exhibits/special-exhibit.html">Special</a></li>
+                            <li><a class="" href="exhibits/ongoing-exhibits.html">Ongoing</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="" href="get-involved.html">Get Involved</a></li>
+                    <li><a class="" href="about.html">About Us</a></li>
+                    <li><a class="" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="mainContentWrap">
+            <h1>Contact</h1>
+            <form class="contactForm" action="" method="get">
+                <label class="contactLabel">Your Name <span id="nameError" class="required">Name required</span>
+                    <input id="nameInput" class="contactInput" type="text" name="Name" /></label>
+                <label class="contactLabel">Email <span id="emailError" class="required">email required</span>
+                    <input id="emailInput" class="contactInput" type="email" name="email" /></label>
+                <label class="contactLabel">Reason for contact <span id="reasonError" class="required">Reason for
+                        contact required</span>
+                    <select id="reasonInput" class="contactSelect" name="reason">
+                        <option value="Please Choose Reason" disabled="disabled" selected="selected">Please Choose
+                            Reason</option>
+                        <option value="Group Tour">Group Tour</option>
+                        <option value="Research">Research</option>
+                        <option value="Intern">Intern</option>
+                        <option value="Education">Education</option>
+                        <option value="Volunteer">Volunteer</option>
+                        <option value="Donate">Donate</option>
+                        <option value="Other">Other</option>
+                    </select></label><br />
+                <label class="contactLabel">Message <span id="messageError" class="required">Message required</span>
+                    <textarea id="messageInput" class="contactInput messageInput" name="message"></textarea>
+                </label>
+                <input id="submit" class="contactSubmitButton" type="submit" name="submit" value="send"
+                    aria-label="submit" />
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-subscribe">
+            <form class="footer-form">
+                <label><span>Subscribe to our newsletter!</span>
+                    <input class="form-in" type="email" value="your email address" />
+                </label>
+                <input class="subscribeButton" type="submit" value="subscribe" aria-label="subscribe">
+                <span class="subscribeError">email must be valid!</span>
+            </form>
+        </div>
+        <a id="footer-logo" href="index.html"><img id="footer-logo-img" src="images/csm_logo_wide.svg"
+                alt="community science museum logo" /></a>
+        <div class="icon-wrap">
+            <address>
+                <p>Tlf: 000 00 000 Email: info@csm.com</p>
+                <p>Havnegata 170, Vadsø 9800</p>
+            </address>
+        </div>
+        <a class="icons" href="#"><i class="fab fa-facebook"></i></a>
+        <a class="icons" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="icons" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="icons" href="#"><i class="fab fa-tiktok"></i></a>
+        <div class="footer-black">
+            <p>&copy Community Science Museum 2020. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

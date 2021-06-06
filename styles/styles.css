@@ -8,7 +8,7 @@
   --lightBlue:#87D3FB;
   --box-shadow: 0 3px 15px 0px rgba(68, 68, 68, 0.6);
 }
-*{
+*, *::before, *::after{
   box-sizing: border-box;
 }
 
@@ -605,7 +605,7 @@ footer p {
   height: auto;
   display: flex;
 }
-.footer-subscribe p{
+.footer-subscribe label{
   color: var(--blue);
   font-family: futura-pt, sans-serif;
   font-weight: 600;
@@ -616,18 +616,16 @@ footer p {
   height: 100%;
   width: 100%;
   max-width: 600px;
-  
   display: inline-block;
   justify-self: center;
 }
 .form-in { 
   border-radius: 6px 0 0 6px;
-  padding: 12px 15px;
+  padding: 12px;
   border: none;
   -webkit-appearance: none;
   width: 60%;
   margin: 10px 0 0 0;
-  font-size: inherit;
   height: 100%;
 }
 .subscribeButton {
@@ -640,13 +638,18 @@ footer p {
   margin: -6px;
   background-color: var(--blue);
   color: #fff;
-  font-size: inherit;
-  cursor: pointer;
-  -webkit-appearance: none;
-  text-decoration: none;
+  text-transform: uppercase;
 }
 .subscribeButton:hover{
   background-color: var(--orange);
+}
+.subscribeError{
+  display: none;
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 10px;
+  font-size: 1.2rem;
 }
 .icon-wrap {
   padding: 8px 0;

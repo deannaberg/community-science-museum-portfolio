@@ -33,10 +33,6 @@ function validateForm(event) {
 
 form.addEventListener("submit", validateForm);
 
-function validateEmail(email) {
-    const regEx = /\S+@\S+\.\S+/;
-    const patternMatch = regEx.test(email);
-    return patternMatch;
-};
+
 
 //function validateCharacters (el, value)
