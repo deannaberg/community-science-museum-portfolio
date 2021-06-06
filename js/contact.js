@@ -33,6 +33,3 @@ function validateForm(event) {
 
 form.addEventListener("submit", validateForm);
 
-
-
-//function validateCharacters (el, value)

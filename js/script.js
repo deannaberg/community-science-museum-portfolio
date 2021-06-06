@@ -1,5 +1,8 @@
 //date and time
 const dateContainer = document.querySelector("#hours");
+const subscribeEmail = document.querySelector("#subscribeEmail");
+const subscribeError = document.querySelector(".subscribeError");
+const subscribe = document.querySelector(".footerForm");
 
 function museumHours() {
     const today = new Date();
@@ -62,6 +65,17 @@ submenuTwo.addEventListener("mouseleave", function () {
     submenuTwoContent.style.display = "none";
 });
 
+
+//Validate Subscribe
+
+function subscribeValidation() {
+    if (validateEmail(subscribeEmail.value, 0) === true) {
+        subscribeError.style.display = "none";
+    } else {
+        subscribeError.style.display = "block";
+    };
+}
+subscribe.addEventListener("submit", subscribeValidation);
 //Validate email 
 
 function validateEmail(email) {
@@ -70,13 +84,3 @@ function validateEmail(email) {
     return patternMatch;
 };
 
-//Validate Subscribe
-const subscribeEmail = document.querySelector("#email");
-const subscribeError = document.querySelector(".subscribeError");
-function subscribeValidation() {
-    if (validateEmail(subscribeEmail.value, 0) === true) {
-    } else {
-        subscribeError.style.display = "block";
-    };
-}
-subscribeValidation()
