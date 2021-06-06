@@ -1,0 +1,71 @@
+main{
+    background-color: var(--yellow);
+    padding: 10px 20px;
+}
+
+/*CONTACT FORM STYLES*/
+
+.required{
+    color: red;
+    text-transform: uppercase;
+    font-size: .8rem;
+    display: none;
+  }
+  .mainContentWrap{
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 40px 50px;
+    color: var(--blue);
+    border-radius: 20px;
+  }
+  .contactForm{
+    height: auto;
+    width: 100%;
+    
+  }
+  .mainContentWrap h1{
+    margin-bottom: 20px;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  .contactInput {
+    border-radius: 6px;
+    padding: 12px 15px;
+    border: 2px solid var(--blue);
+    width: 100%;
+    -webkit-appearance: none;
+    margin: 5px 0 20px 0;
+    font-size: .8em;
+    
+  }
+  .contactSelect{
+    margin-bottom: 20px;
+  }
+  .contactLabel{
+    font-size: 1.2rem;
+    font-family: mr-eaves-xl-mod, sans-serif;
+    font-weight: 600;
+  }
+  .messageInput{
+    height: 100px;
+    resize: none;
+    overflow: auto;
+  }
+  .contactSubmitButton{
+    border: 0 none;
+    outline:none;
+    background-color: var(--blue);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 100px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    
+  }
+  .contactSubmitButton:hover{
+      background-color: var(--orange);
+  }
