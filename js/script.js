@@ -71,3 +71,12 @@ function validateEmail(email) {
 };
 
 //Validate Subscribe
+const subscribeEmail = document.querySelector("#email");
+const subscribeError = document.querySelector(".subscribeError");
+function subscribeValidation() {
+    if (validateEmail(subscribeEmail.value, 0) === true) {
+    } else {
+        subscribeError.style.display = "block";
+    };
+}
+subscribeValidation()
