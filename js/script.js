@@ -27,7 +27,7 @@ museumHours()
 
 const hamburgerMenu = document.querySelector("#hamMenu");
 const closeButton = document.querySelector("#closeMenu");
-const nav = document.querySelector("nav");
+const nav = document.querySelector("#navMenu");
 
 hamburgerMenu.addEventListener("click", showMenu);
 closeButton.addEventListener("click", closeMenu);
